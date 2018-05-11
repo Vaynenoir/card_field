@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		
+		table {
+		  width: 30%!important;
+			margin: 0 auto;
+		}
+		td {
+		  text-align: center;
+		  position: relative;
+		}
+		td:after {
+		  content: '';
+		  display: block;
+		  margin-top: 100%;
+		}
+		td .content {
+		  position: absolute;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  background: gold;
+		}
+		.pink_color{
+			background-color: pink;
+			transition: 2s;
+		}
+		.blue_color{
+			background-color: blue;
+			transition: 2s;
+		}
+	
+		.heart{
+			width: 20px;
+			height: 20px;
+			background-image: url("icons/002-heart.png");
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.diamond{
+			width: 20px;
+			height: 20px;
+			background-image: url("icons/001-diamond.png");
+			background-repeat: no-repeat;
+			background-position: center center;			
+		}
+		.cross{
+			
+			width: 20px;
+			height: 20px;
+			background-image: url("icons/004-gambler.png");
+			background-repeat: no-repeat;
+			background-position: center center;					
+		}
+		.peak{
+			
+			width: 20px;
+			height: 20px;
+			background-image: url("icons/003-gambler-1.png");
+			background-repeat: no-repeat;
+			background-position: center center;					
+		}
+
+		#counter{
+			font-size: 30px;
+		}
+		.active{
+			/*border: 1px solid #ff0000;*/
+			background-color: #70ffa6;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="table_container">
+		<div class="counter_container">
+			<h1 id="card"></h1>
+			<h2 id="counter"></h2>
+		</div>
+		<table id="table_field"></table>
+	</div>
+
+</body>
+
+	<script src="libs/jquery-1.12.4.min.js"></script>
+	<script src="js/script.js"></script>
+</html>
