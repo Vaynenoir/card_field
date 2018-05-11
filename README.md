@@ -1,4 +1,4 @@
 # card_field
 Technical task for PlayToMax company.
 
-For demo.
+Demo: https://vaynenoir.github.io/card_field/index.html
